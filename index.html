@@ -434,7 +434,7 @@ p{max-width:58ch}
       es.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
     }, {rootMargin:'0px 0px -8% 0px', threshold:0.05});
     [].forEach.call(items, function(el){ io.observe(el); });
-    setTimeout(function(){ [].forEach.call(items, function(el){ el.classList.add('in'); }); }, 1600);
+    setTimeout(function(){ [].forEach.call(items, function(el){ el.classList.add('in'); }); }, 800);
   }
 
   var mapEl = document.getElementById('map');
